@@ -1,0 +1,13 @@
+{:duct.core/project-ns  incrudible
+ :duct.core/environment :production
+
+ :duct.module/logging {}
+ :duct.module.web/api {}
+ :duct.module/sql {}
+ :duct.module/cljs {:main incrudible.client}
+
+ :duct.module/ataraxy
+ {[:get "/example"] [:example]}
+
+ :incrudible.handler/example
+ {:db #ig/ref :duct.database/sql}}
