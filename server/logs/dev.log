@@ -1,0 +1,42 @@
+18-04-16 17:19:01 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["CREATE TABLE ragtime_migrations (id varchar(255), created_at varchar(32))"], :elapsed 1}
+18-04-16 17:19:02 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["SELECT id FROM ragtime_migrations ORDER BY created_at"], :elapsed 5}
+18-04-16 17:19:02 Sangs-MacBook-Pro.local REPORT [duct.migrator.ragtime:14] - :duct.migrator.ragtime/applying :incrudible.migration/create-users#131298dc
+18-04-16 17:19:02 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, password TEXT)"], :elapsed 0}
+18-04-16 17:19:02 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["INSERT INTO ragtime_migrations ( id, created_at ) VALUES ( ?, ? )" ":incrudible.migration/create-users#131298dc" "2018-04-17T02:19:02.216"], :elapsed 1}
+18-04-16 17:19:02 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:31] - :duct.database.sql/batch-query {:queries [], :elapsed 0}
+18-04-16 17:19:02 Sangs-MacBook-Pro.local REPORT [duct.server.http.jetty:13] - :duct.server.http.jetty/starting-server {:port 3000}
+18-04-16 17:19:06 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["SELECT id FROM ragtime_migrations ORDER BY created_at"], :elapsed 0}
+18-04-16 17:19:32 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["SELECT id FROM ragtime_migrations ORDER BY created_at"], :elapsed 4}
+18-04-16 17:19:32 Sangs-MacBook-Pro.local REPORT [duct.server.http.jetty:13] - :duct.server.http.jetty/starting-server {:port 3000}
+18-04-16 17:19:38 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :get, :uri "/", :query-string nil}
+18-04-16 17:25:40 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:25:45 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:25:48 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:25:48 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:25:48 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:25:53 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:25:53 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:02 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:02 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:02 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:03 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:03 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:13 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:13 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:13 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:14 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:30 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:49 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:50 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:50 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:55 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:26:57 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string nil}
+18-04-16 17:27:05 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :get, :uri "/users", :query-string nil}
+18-04-16 17:27:05 Sangs-MacBook-Pro.local INFO [duct.database.sql.hikaricp:30] - :duct.database.sql/query {:query ["SELECT * FROM users"], :elapsed 1}
+18-04-16 17:27:44 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string "name=sangyoo&email=1231231&password=123123"}
+18-04-16 17:27:56 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string "name=sangyoo&email=1231231&password=123123"}
+18-04-16 17:27:58 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string "name=sangyoo&email=1231231&password=123123"}
+18-04-16 17:27:58 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string "name=sangyoo&email=1231231&password=123123"}
+18-04-16 17:27:59 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :post, :uri "/users", :query-string "name=sangyoo&email=1231231&password=123123"}
+18-04-16 17:32:37 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :options, :uri "/users", :query-string nil}
+18-04-16 17:32:43 Sangs-MacBook-Pro.local INFO [duct.middleware.web:16] - :duct.middleware.web/request {:request-method :options, :uri "/users", :query-string nil}
