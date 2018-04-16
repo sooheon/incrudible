@@ -2,12 +2,10 @@
  :duct.core/environment :production
 
  :duct.module/logging {}
- :duct.module.web/api {}
- :duct.module/sql {}
- :duct.module/cljs {:main incrudible.client}
-
- :duct.module/ataraxy
- {[:get "/example"] [:example]}
+ :duct.module.web/site {}
+ 
+ :duct.router/cascading
+ [#ig/ref :incrudible.handler/example]
 
  :incrudible.handler/example
- {:db #ig/ref :duct.database/sql}}
+ {}}

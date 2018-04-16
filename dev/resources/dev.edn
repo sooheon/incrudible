@@ -1,5 +1,2 @@
 {:duct.core/environment :development
- :duct.core/include ["incrudible/config"]
-
- :duct.module/sql
- {:database-url "jdbc:sqlite:db/dev.sqlite"}}
+ :duct.core/include ["incrudible/config"]}
