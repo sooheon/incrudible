@@ -1,6 +1,6 @@
-# Incrudible
+# incrudible
 
-An experiment in collaboration. Vue on the front-end and Clojure on the backend.
+FIXME: description
 
 ## Developing
 
@@ -14,14 +14,6 @@ lein duct setup
 
 This will create files for local configuration, and prep your system
 for the project.
-
-Next connect the repository to the [Heroku][] app:
-
-```sh
-heroku git:remote -a FIXME
-```
-
-[heroku]: https://www.heroku.com/
 
 ### Environment
 
@@ -49,24 +41,12 @@ dev=> (go)
 By default this creates a web server at <http://localhost:3000>.
 
 When you make changes to your source files, use `reset` to reload any
-modified files and reset the server. Changes to CSS or ClojureScript
-files will be hot-loaded into the browser.
+modified files and reset the server.
 
 ```clojure
 dev=> (reset)
 :reloading (...)
 :resumed
-```
-
-If you want to access a ClojureScript REPL, make sure that the site is loaded
-in a browser and run:
-
-```clojure
-dev=> (cljs-repl)
-Waiting for browser connection... Connected.
-To quit, type: :cljs/quit
-nil
-cljs.user=>
 ```
 
 ### Testing
@@ -88,5 +68,3 @@ lein test
 ## Legal
 
 Copyright © 2018 FIXME
-
-**Made with 💖**
