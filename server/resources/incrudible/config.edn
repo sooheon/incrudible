@@ -1,4 +1,4 @@
-{:duct.core/project-ns  incrudible
+{:duct.core/project-ns incrudible
  :duct.core/environment :production
 
  :duct.module/logging {}
@@ -6,4 +6,18 @@
  :duct.module/sql {}
 
  :duct.module/ataraxy
- {}}
+ {"/users"
+  {[:post {user :body-params}] [:user/create user]
+   [:get] [:user/list]
+   [:get "/" id] [:user/fetch ^int id]}}
+
+ :incrudible.handler.user/create {:db #ig/ref :duct.database/sql}
+ :incrudible.handler.user/list {:db #ig/ref :duct.database/sql}
+ :incrudible.handler.user/fetch {:db #ig/ref :duct.database/sql}
+
+ :duct.migrator/ragtime
+ {:migrations [#ig/ref :incrudible.migration/create-users]}
+
+ [:duct.migrator.ragtime/sql :incrudible.migration/create-users]
+ {:up ["CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, password TEXT)"]
+  :down ["DROP TABLE users"]}}
